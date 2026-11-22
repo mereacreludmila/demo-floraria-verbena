@@ -1,21 +1,12 @@
 {
   "lista": [
     {
-      "nume": "Dimineață de mai",
-      "descriere": "Trandafiri roz, eucalipt și santini albi.",
-      "tip": "Trandafiri",
-      "ocazii": [
-        "Iubire",
-        "Pentru mama"
-      ],
-      "eticheta": "Cel mai comandat",
-      "eticheta_roz": false,
       "cel_mai_iubit": true,
       "marimi": [
         {
           "nume": "Mic",
           "pret": 149,
-          "foto": "",
+          "foto": "/images/uploads/uljana-borodina-nfj6peudmpy-unsplash-mwrq0l2j.jpg",
           "foto_pozitie": "centru"
         },
         {
@@ -31,24 +22,24 @@
           "foto_pozitie": "centru"
         }
       ],
-      "reducere": 0
+      "ocazii": [
+        "Iubire",
+        "Pentru mama"
+      ],
+      "descriere": "Trandafiri roz, eucalipt și santini albi.",
+      "eticheta_roz": false,
+      "eticheta": "Cel mai comandat",
+      "reducere": 0,
+      "tip": "Trandafiri",
+      "nume": "Dimineață de mai"
     },
     {
-      "nume": "Câmp de vară",
-      "descriere": "Flori de câmp de sezon, legate liber.",
-      "tip": "Flori de câmp",
-      "ocazii": [
-        "Zi de naștere",
-        "Mulțumesc"
-      ],
-      "eticheta": "",
-      "eticheta_roz": false,
       "cel_mai_iubit": true,
       "marimi": [
         {
           "nume": "Mic",
           "pret": 129,
-          "foto": "",
+          "foto": "/images/uploads/niklas-ohlrogge-niamoh-de-74qmijdtd-c-un-mwrq2yx4.jpg",
           "foto_pozitie": "centru"
         },
         {
@@ -64,24 +55,24 @@
           "foto_pozitie": "centru"
         }
       ],
-      "reducere": 0
+      "ocazii": [
+        "Zi de naștere",
+        "Mulțumesc"
+      ],
+      "descriere": "Flori de câmp de sezon, legate liber.",
+      "eticheta_roz": false,
+      "eticheta": "",
+      "reducere": 0,
+      "tip": "Flori de câmp",
+      "nume": "Câmp de vară"
     },
     {
-      "nume": "Alb liniștit",
-      "descriere": "Crini, trandafiri albi și verdeață.",
-      "tip": "Crini",
-      "ocazii": [
-        "Condoleanțe",
-        "Pentru mama"
-      ],
-      "eticheta": "",
-      "eticheta_roz": false,
       "cel_mai_iubit": false,
       "marimi": [
         {
           "nume": "Mic",
           "pret": 169,
-          "foto": "",
+          "foto": "/images/uploads/haydn-golden-lft2t-e08kw-unsplash-mwrq43qd.jpg",
           "foto_pozitie": "centru"
         },
         {
@@ -97,24 +88,24 @@
           "foto_pozitie": "centru"
         }
       ],
-      "reducere": 0
+      "ocazii": [
+        "Condoleanțe",
+        "Pentru mama"
+      ],
+      "descriere": "Crini, trandafiri albi și verdeață.",
+      "eticheta_roz": false,
+      "eticheta": "",
+      "reducere": 0,
+      "tip": "Crini",
+      "nume": "Alb liniștit"
     },
     {
-      "nume": "Bujori",
-      "descriere": "Bujori de sezon, doar mai–iunie.",
-      "tip": "Bujori",
-      "ocazii": [
-        "Iubire",
-        "Zi de naștere"
-      ],
-      "eticheta": "",
-      "eticheta_roz": true,
       "cel_mai_iubit": true,
       "marimi": [
         {
           "nume": "Mic",
           "pret": 189,
-          "foto": "",
+          "foto": "/images/uploads/rebecca-a-fbqe39a4k-unsplash-mwrq4njr.jpg",
           "foto_pozitie": "centru"
         },
         {
@@ -130,24 +121,24 @@
           "foto_pozitie": "centru"
         }
       ],
-      "reducere": 20
+      "ocazii": [
+        "Iubire",
+        "Zi de naștere"
+      ],
+      "descriere": "Bujori de sezon, doar mai–iunie.",
+      "eticheta_roz": true,
+      "eticheta": "",
+      "reducere": 20,
+      "tip": "Bujori",
+      "nume": "Bujori"
     },
     {
-      "nume": "Soare în vază",
-      "descriere": "Floarea-soarelui și solidago.",
-      "tip": "Floarea-soarelui",
-      "ocazii": [
-        "Zi de naștere",
-        "Mulțumesc"
-      ],
-      "eticheta": "",
-      "eticheta_roz": false,
       "cel_mai_iubit": true,
       "marimi": [
         {
           "nume": "Mic",
           "pret": 119,
-          "foto": "",
+          "foto": "/images/uploads/matthew-nevins-bell-hg0edh34nm0-unsplash-mwrq52ao.jpg",
           "foto_pozitie": "centru"
         },
         {
@@ -163,24 +154,24 @@
           "foto_pozitie": "centru"
         }
       ],
-      "reducere": 0
+      "ocazii": [
+        "Zi de naștere",
+        "Mulțumesc"
+      ],
+      "descriere": "Floarea-soarelui și solidago.",
+      "eticheta_roz": false,
+      "eticheta": "",
+      "reducere": 0,
+      "tip": "Floarea-soarelui",
+      "nume": "Soare în vază"
     },
     {
-      "nume": "Lalele pastel",
-      "descriere": "Lalele în trei nuanțe, ambalate în hârtie.",
-      "tip": "Lalele",
-      "ocazii": [
-        "Mulțumesc",
-        "Pentru mama"
-      ],
-      "eticheta": "",
-      "eticheta_roz": false,
       "cel_mai_iubit": false,
       "marimi": [
         {
           "nume": "Mic",
           "pret": 99,
-          "foto": "",
+          "foto": "/images/uploads/arjun-lama-cc00j2xe1de-unsplash-mwrq5sbz.jpg",
           "foto_pozitie": "centru"
         },
         {
@@ -196,23 +187,24 @@
           "foto_pozitie": "centru"
         }
       ],
-      "reducere": 0
+      "ocazii": [
+        "Mulțumesc",
+        "Pentru mama"
+      ],
+      "descriere": "Lalele în trei nuanțe, ambalate în hârtie.",
+      "eticheta_roz": false,
+      "eticheta": "",
+      "reducere": 0,
+      "tip": "Lalele",
+      "nume": "Lalele pastel"
     },
     {
-      "nume": "Cutie cu trandafiri",
-      "descriere": "Trandafiri roșii în cutie rotundă.",
-      "tip": "Trandafiri",
-      "ocazii": [
-        "Iubire"
-      ],
-      "eticheta": "Nou",
-      "eticheta_roz": true,
       "cel_mai_iubit": true,
       "marimi": [
         {
           "nume": "Mică",
           "pret": 199,
-          "foto": "",
+          "foto": "/images/uploads/christine-sandu-hvparwniehu-unsplash-mwrq6pa1.jpg",
           "foto_pozitie": "centru"
         },
         {
@@ -228,25 +220,23 @@
           "foto_pozitie": "centru"
         }
       ],
-      "reducere": 0
+      "ocazii": [
+        "Iubire"
+      ],
+      "descriere": "Trandafiri roșii în cutie rotundă.",
+      "eticheta_roz": true,
+      "eticheta": "Nou",
+      "reducere": 0,
+      "tip": "Trandafiri",
+      "nume": "Cutie cu trandafiri"
     },
     {
-      "nume": "Orhidee în ghiveci",
-      "descriere": "Phalaenopsis, durează luni întregi.",
-      "tip": "Orhidee",
-      "ocazii": [
-        "Mulțumesc",
-        "Condoleanțe",
-        "Pentru mama"
-      ],
-      "eticheta": "",
-      "eticheta_roz": false,
       "cel_mai_iubit": false,
       "marimi": [
         {
           "nume": "1 tulpină",
           "pret": 129,
-          "foto": "",
+          "foto": "/images/uploads/philipp-m-cxnlfrdd3-c-unsplash-mwrq7odm.jpg",
           "foto_pozitie": "centru"
         },
         {
@@ -262,7 +252,17 @@
           "foto_pozitie": "centru"
         }
       ],
-      "reducere": 0
+      "ocazii": [
+        "Mulțumesc",
+        "Condoleanțe",
+        "Pentru mama"
+      ],
+      "descriere": "Phalaenopsis, durează luni întregi.",
+      "eticheta_roz": false,
+      "eticheta": "",
+      "reducere": 0,
+      "tip": "Orhidee",
+      "nume": "Orhidee în ghiveci"
     }
   ]
 }
