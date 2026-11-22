@@ -7,7 +7,7 @@
       "link": "#buchete",
       "fundal": "#F2A541",
       "culoare_text": "#2B1600",
-      "foto": "",
+      "foto": "/images/uploads/vika-fleysher-doqf-x6qkxu-unsplash-mwrp3h8d.jpg",
       "foto_pozitie": "centru"
     },
     {
@@ -17,7 +17,7 @@
       "link": "flori/trandafiri",
       "fundal": "#B0215F",
       "culoare_text": "#FFFFFF",
-      "foto": "",
+      "foto": "/images/uploads/viacheslav-volodin-fubahgdci3s-unsplash-mwrp4zjl.jpg",
       "foto_pozitie": "centru"
     },
     {
@@ -27,8 +27,66 @@
       "link": "whatsapp",
       "fundal": "#C9E4D3",
       "culoare_text": "#173326",
-      "foto": "",
+      "foto": "/images/uploads/sam-lashbrooke-p4wriqjxdqs-unsplash-mwrp5d18.jpg",
       "foto_pozitie": "centru"
+    }
+  ],
+  "promotie": {
+    "activa": true,
+    "text": "Săptămâna aceasta: −20% la Recomandarea săptămânii."
+  },
+  "recomandare": {
+    "activa": true,
+    "titlu": "Recomandarea săptămânii",
+    "produs": "Bujori",
+    "buton": "Trimite-i flori"
+  },
+  "colectii": [
+    {
+      "titlu": "Pentru zile de naștere",
+      "text": "Culori vesele și buchete generoase, pentru o zi în care sărbătoritul merită tot ce e mai frumos.",
+      "ocazie": "Zi de naștere",
+      "tip": "Lalele"
+    },
+    {
+      "titlu": "Trandafiri pentru orice poveste",
+      "text": "Roșii, roz sau albi, în buchet sau în cutie. Clasicul care nu dă greș.",
+      "ocazie": "",
+      "tip": "Trandafiri"
+    },
+    {
+      "titlu": "Pentru mama",
+      "text": "Flori delicate, în nuanțe calde, pentru omul care le merită cel mai mult.",
+      "ocazie": "Pentru mama",
+      "tip": ""
+    }
+  ],
+  "evenimente_titlu": "Nunți și botezuri",
+  "evenimente_text": "Lucrăm cu fiecare familie în parte. Spune-ne data și locul, iar noi îți trimitem o propunere.",
+  "evenimente": [
+    {
+      "titlu": "Buchete de mireasă",
+      "subtitlu": "Lucrate cu pasiune",
+      "foto": "/images/uploads/sam-lashbrooke-p4wriqjxdqs-unsplash-mwrp5d18.jpg",
+      "foto_pozitie": "centru",
+      "culoare": "#EFE9F7",
+      "link": "whatsapp"
+    },
+    {
+      "titlu": "Lumânări de nuntă",
+      "subtitlu": "Delicate și naturale",
+      "foto": "/images/uploads/set-sj-yhrpniadlh0-unsplash-mwrpfmn0.jpg",
+      "foto_pozitie": "centru",
+      "culoare": "#F7E3E9",
+      "link": "whatsapp"
+    },
+    {
+      "titlu": "Lumânări de botez",
+      "subtitlu": "Diafane și elegante",
+      "foto": "/images/uploads/alexander-kaufmann-sfjcqlgbjd8-unsplash-mwrpebsn.jpg",
+      "foto_pozitie": "centru",
+      "culoare": "#E3F1E8",
+      "link": "whatsapp"
     }
   ],
   "avantaje": [
@@ -106,64 +164,6 @@
     {
       "intrebare": "Cât rezistă florile?",
       "raspuns": "Între 5 și 10 zile, în funcție de flori. Primești în buchet un plic cu hrană pentru flori și un mic ghid de îngrijire."
-    }
-  ],
-  "promotie": {
-    "activa": true,
-    "text": "Săptămâna aceasta: −20% la Recomandarea săptămânii."
-  },
-  "recomandare": {
-    "activa": true,
-    "titlu": "Recomandarea săptămânii",
-    "produs": "Bujori",
-    "buton": "Trimite-i flori"
-  },
-  "colectii": [
-    {
-      "titlu": "Pentru zile de naștere",
-      "text": "Culori vesele și buchete generoase, pentru o zi în care sărbătoritul merită tot ce e mai frumos.",
-      "ocazie": "Zi de naștere",
-      "tip": ""
-    },
-    {
-      "titlu": "Trandafiri pentru orice poveste",
-      "text": "Roșii, roz sau albi, în buchet sau în cutie. Clasicul care nu dă greș.",
-      "ocazie": "",
-      "tip": "Trandafiri"
-    },
-    {
-      "titlu": "Pentru mama",
-      "text": "Flori delicate, în nuanțe calde, pentru omul care le merită cel mai mult.",
-      "ocazie": "Pentru mama",
-      "tip": ""
-    }
-  ],
-  "evenimente_titlu": "Nunți și botezuri",
-  "evenimente_text": "Lucrăm cu fiecare familie în parte. Spune-ne data și locul, iar noi îți trimitem o propunere.",
-  "evenimente": [
-    {
-      "titlu": "Buchete de mireasă",
-      "subtitlu": "Lucrate cu pasiune",
-      "foto": "",
-      "foto_pozitie": "centru",
-      "culoare": "#EFE9F7",
-      "link": "whatsapp"
-    },
-    {
-      "titlu": "Lumânări de nuntă",
-      "subtitlu": "Delicate și naturale",
-      "foto": "",
-      "foto_pozitie": "centru",
-      "culoare": "#F7E3E9",
-      "link": "whatsapp"
-    },
-    {
-      "titlu": "Lumânări de botez",
-      "subtitlu": "Diafane și elegante",
-      "foto": "",
-      "foto_pozitie": "centru",
-      "culoare": "#E3F1E8",
-      "link": "whatsapp"
     }
   ]
 }
