@@ -1,0 +1,4 @@
+# Netlify rulează build.js și publică folderul "dist"
+[build]
+  command = "node build.js"
+  publish = "dist"

@@ -1,0 +1,18 @@
+{
+  "nume": "Verbena",
+  "descriere": "Florărie cu livrare în oraș. Buchete proaspete, livrate în aceeași zi.",
+  "telefon": "0700 000 000",
+  "telefon_link": "+40700000000",
+  "email": "comenzi@exemplu.ro",
+  "adresa": "Str. Exemplului nr. 8, Orașul Tău",
+  "program": "L–S 08:00–19:00",
+  "whatsapp": "40700000000",
+  "ora_limita": 14,
+  "taxa_livrare": 20,
+  "livrare_gratuita_peste": 250,
+  "zile_livrare": ["luni", "marti", "miercuri", "joi", "vineri", "sambata"],
+  "intervale": ["09:00–12:00", "12:00–15:00", "15:00–19:00"],
+  "comenzi_metoda": "netlify",
+  "comenzi_endpoint": "",
+  "demo": true
+}

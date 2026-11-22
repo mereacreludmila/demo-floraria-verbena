@@ -1,0 +1,201 @@
+# Panoul de editare al florăriei. Aici decidem exact ce poate modifica florăria.
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+site_url: "/"
+display_url: "/"
+
+collections:
+  - name: "magazin"
+    label: "Magazin"
+    editor: { preview: false }
+    files:
+      - name: "produse"
+        label: "Buchete și prețuri"
+        file: "content/produse.json"
+        fields:
+          - label: "Buchete"
+            name: "lista"
+            widget: "list"
+            label_singular: "buchet"
+            summary: "{{fields.nume}}"
+            fields:
+              - { label: "Numele buchetului", name: "nume", widget: "string" }
+              - { label: "Descriere scurtă", name: "descriere", widget: "string" }
+              - { label: "Tipul de flori", name: "tip", widget: "relation", collection: "magazin", file: "tipuri", search_fields: ["lista.*.nume"], value_field: "lista.*.nume", display_fields: ["lista.*.nume"], hint: "Buchetul apare pe pagina acestui tip de flori." }
+              - { label: "Ocazii", name: "ocazii", widget: "relation", collection: "magazin", file: "ocazii", search_fields: ["lista.*.nume"], value_field: "lista.*.nume", display_fields: ["lista.*.nume"], multiple: true, required: false, hint: "Buchetul apare pe paginile acestor ocazii." }
+              - { label: "Etichetă (opțional)", name: "eticheta", widget: "string", required: false, hint: "Exemplu: Nou, De sezon, Cel mai comandat" }
+              - { label: "Eticheta în roz", name: "eticheta_roz", widget: "boolean", default: false, required: false }
+              - { label: "Apare la „Cele mai iubite”", name: "cel_mai_iubit", widget: "boolean", default: false, required: false }
+              - { label: "Reducere (%)", name: "reducere", widget: "number", value_type: "int", min: 0, max: 90, default: 0, required: false, hint: "0 = fără reducere. Prețul redus se calculează automat la toate mărimile." }
+              - label: "Mărimi și prețuri"
+                name: "marimi"
+                widget: "list"
+                label_singular: "mărime"
+                min: 1
+                summary: "{{fields.nume}}: {{fields.pret}} lei"
+                fields:
+                  - { label: "Mărimea", name: "nume", widget: "string", hint: "Exemplu: Mic, Mediu, Mare sau 1 tulpină" }
+                  - { label: "Preț (lei)", name: "pret", widget: "number", value_type: "int", min: 0 }
+                  - { label: "Fotografia acestei mărimi", name: "foto", widget: "image", required: false, hint: "Opțional. Dacă lipsește, se folosește poza altei mărimi." }
+                  - { label: "Încadrarea fotografiei", name: "foto_pozitie", widget: "select", default: "centru", required: false, options: [{ label: "Sus", value: "sus" }, { label: "Centru", value: "centru" }, { label: "Jos", value: "jos" }, { label: "Stânga", value: "stanga" }, { label: "Dreapta", value: "dreapta" }], hint: "Ce parte a pozei rămâne vizibilă dacă poza e decupată." }
+
+      - name: "tipuri"
+        label: "Tipuri de flori"
+        file: "content/tipuri.json"
+        fields:
+          - label: "Tipuri de flori"
+            name: "lista"
+            widget: "list"
+            label_singular: "tip de flori"
+            summary: "{{fields.nume}}"
+            hint: "Fiecare tip de flori are pagina lui. Un tip nou primește automat pagina."
+            fields:
+              - { label: "Nume", name: "nume", widget: "string" }
+              - { label: "Descriere (apare pe pagina lui)", name: "text", widget: "text" }
+              - { label: "Fotografie (cercul de pe prima pagină)", name: "foto", widget: "image", required: false }
+              - { label: "Încadrarea fotografiei", name: "foto_pozitie", widget: "select", default: "centru", required: false, options: [{ label: "Sus", value: "sus" }, { label: "Centru", value: "centru" }, { label: "Jos", value: "jos" }, { label: "Stânga", value: "stanga" }, { label: "Dreapta", value: "dreapta" }], hint: "Ce parte a pozei rămâne vizibilă dacă poza e decupată." }
+              - { label: "Culoarea de fundal a paginii", name: "culoare", widget: "color", default: "#FCE4EC" }
+              - { label: "Culoarea florii desenate (când nu e poză)", name: "culoare_floare", widget: "color", default: "#C2185B" }
+
+      - name: "ocazii"
+        label: "Ocazii"
+        file: "content/ocazii.json"
+        fields:
+          - label: "Ocazii"
+            name: "lista"
+            widget: "list"
+            label_singular: "ocazie"
+            summary: "{{fields.nume}}"
+            hint: "Fiecare ocazie are pagina ei. O ocazie nouă primește automat pagina."
+            fields:
+              - { label: "Nume", name: "nume", widget: "string" }
+              - { label: "Text scurt", name: "text", widget: "string" }
+              - { label: "Culoare", name: "culoare", widget: "color", default: "#F5C443" }
+
+  - name: "site"
+    label: "Site"
+    editor: { preview: false }
+    files:
+      - name: "acasa"
+        label: "Prima pagină"
+        file: "content/acasa.json"
+        fields:
+          - label: "Caruselul de sus"
+            name: "slideuri"
+            widget: "list"
+            label_singular: "slide"
+            summary: "{{fields.titlu}}"
+            fields:
+              - { label: "Titlu", name: "titlu", widget: "string", hint: "Scrie {zi} acolo unde vrei să apară automat „azi” sau „mâine”." }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Textul butonului", name: "buton", widget: "string", required: false }
+              - { label: "Unde duce butonul", name: "link", widget: "string", required: false, hint: "#buchete, flori/trandafiri, ocazii/iubire sau whatsapp" }
+              - { label: "Culoare fundal", name: "fundal", widget: "color" }
+              - { label: "Culoare text", name: "culoare_text", widget: "color" }
+              - { label: "Fotografie", name: "foto", widget: "image", required: false }
+              - { label: "Încadrarea fotografiei", name: "foto_pozitie", widget: "select", default: "centru", required: false, options: [{ label: "Sus", value: "sus" }, { label: "Centru", value: "centru" }, { label: "Jos", value: "jos" }, { label: "Stânga", value: "stanga" }, { label: "Dreapta", value: "dreapta" }], hint: "Ce parte a pozei rămâne vizibilă dacă poza e decupată." }
+          - label: "Bara de promoție (sus de tot)"
+            name: "promotie"
+            widget: "object"
+            fields:
+              - { label: "Afișează bara", name: "activa", widget: "boolean", default: false, required: false, hint: "Când e oprită, apare bara cu livrarea." }
+              - { label: "Mesajul", name: "text", widget: "string", required: false }
+          - label: "Recomandarea săptămânii"
+            name: "recomandare"
+            widget: "object"
+            fields:
+              - { label: "Afișează recomandarea", name: "activa", widget: "boolean", default: true, required: false }
+              - { label: "Titlu", name: "titlu", widget: "string", default: "Recomandarea săptămânii" }
+              - { label: "Buchetul recomandat", name: "produs", widget: "relation", collection: "magazin", file: "produse", search_fields: ["lista.*.nume"], value_field: "lista.*.nume", display_fields: ["lista.*.nume"], hint: "Pentru o reducere, setează procentul la buchet, în „Buchete și prețuri”." }
+              - { label: "Textul butonului", name: "buton", widget: "string", default: "Trimite-i flori" }
+          - label: "Colecții pe prima pagină"
+            name: "colectii"
+            widget: "list"
+            label_singular: "colecție"
+            summary: "{{fields.titlu}}"
+            hint: "Fiecare colecție arată 4 buchete și un link „Vezi mai multe”. Alege un tip de flori SAU o ocazie."
+            fields:
+              - { label: "Titlu", name: "titlu", widget: "string" }
+              - { label: "Text scurt", name: "text", widget: "text" }
+              - { label: "Tip de flori", name: "tip", widget: "relation", collection: "magazin", file: "tipuri", search_fields: ["lista.*.nume"], value_field: "lista.*.nume", display_fields: ["lista.*.nume"], required: false }
+              - { label: "Ocazie", name: "ocazie", widget: "relation", collection: "magazin", file: "ocazii", search_fields: ["lista.*.nume"], value_field: "lista.*.nume", display_fields: ["lista.*.nume"], required: false }
+          - { label: "Evenimente: titlu", name: "evenimente_titlu", widget: "string" }
+          - { label: "Evenimente: text", name: "evenimente_text", widget: "text" }
+          - label: "Evenimente: bannere"
+            name: "evenimente"
+            widget: "list"
+            label_singular: "banner"
+            summary: "{{fields.titlu}}"
+            fields:
+              - { label: "Titlu", name: "titlu", widget: "string" }
+              - { label: "Subtitlu", name: "subtitlu", widget: "string" }
+              - { label: "Fotografie", name: "foto", widget: "image", required: false }
+              - { label: "Încadrarea fotografiei", name: "foto_pozitie", widget: "select", default: "centru", required: false, options: [{ label: "Sus", value: "sus" }, { label: "Centru", value: "centru" }, { label: "Jos", value: "jos" }, { label: "Stânga", value: "stanga" }, { label: "Dreapta", value: "dreapta" }], hint: "Ce parte a pozei rămâne vizibilă dacă poza e decupată." }
+              - { label: "Culoare (când nu e poză)", name: "culoare", widget: "color", default: "#EFE9F7" }
+              - { label: "Unde duce", name: "link", widget: "string", default: "whatsapp", hint: "whatsapp, flori/trandafiri, ocazii/iubire sau un link complet" }
+          - label: "Avantaje (bandă sub carusel)"
+            name: "avantaje"
+            widget: "list"
+            max: 4
+            summary: "{{fields.titlu}}"
+            fields:
+              - { label: "Titlu", name: "titlu", widget: "string" }
+              - { label: "Text", name: "text", widget: "string" }
+          - { label: "„Te sunăm noi”: titlu", name: "suna_titlu", widget: "string" }
+          - { label: "„Te sunăm noi”: text", name: "suna_text", widget: "text" }
+          - { label: "Nota din recenzii", name: "recenzii_nota", widget: "string" }
+          - { label: "Text lângă notă", name: "recenzii_numar", widget: "string" }
+          - label: "Recenzii"
+            name: "recenzii"
+            widget: "list"
+            summary: "{{fields.autor}}"
+            fields:
+              - { label: "Recenzia", name: "text", widget: "text" }
+              - { label: "Autor", name: "autor", widget: "string" }
+          - { label: "Livrare: text", name: "livrare_text", widget: "text" }
+          - label: "Livrare: detalii"
+            name: "livrare_detalii"
+            widget: "list"
+            summary: "{{fields.eticheta}}: {{fields.valoare}}"
+            fields:
+              - { label: "Etichetă", name: "eticheta", widget: "string" }
+              - { label: "Valoare", name: "valoare", widget: "string" }
+          - label: "Întrebări frecvente"
+            name: "intrebari"
+            widget: "list"
+            summary: "{{fields.intrebare}}"
+            fields:
+              - { label: "Întrebare", name: "intrebare", widget: "string" }
+              - { label: "Răspuns", name: "raspuns", widget: "text" }
+
+      - name: "setari"
+        label: "Contact, livrare și comenzi"
+        file: "content/setari.json"
+        fields:
+          - { label: "Numele florăriei", name: "nume", widget: "string" }
+          - { label: "Descriere scurtă", name: "descriere", widget: "text" }
+          - { label: "Telefon (cum se afișează)", name: "telefon", widget: "string" }
+          - { label: "Telefon pentru apel", name: "telefon_link", widget: "string", hint: "Cu prefixul țării, fără spații. Exemplu: +40700000000" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Adresa", name: "adresa", widget: "string" }
+          - { label: "Program", name: "program", widget: "string" }
+          - { label: "Număr WhatsApp", name: "whatsapp", widget: "string", hint: "Doar cifre, cu prefixul țării. Exemplu: 40700000000" }
+          - { label: "Ora limită pentru livrare în aceeași zi", name: "ora_limita", widget: "number", value_type: "int", min: 0, max: 23 }
+          - { label: "Taxa de livrare (lei)", name: "taxa_livrare", widget: "number", value_type: "int", min: 0 }
+          - { label: "Livrare gratuită peste (lei)", name: "livrare_gratuita_peste", widget: "number", value_type: "int", min: 0, hint: "Pune 0 dacă nu oferiți livrare gratuită." }
+          - { label: "Zile cu livrare", name: "zile_livrare", widget: "select", multiple: true, options: [{ label: "Luni", value: "luni" }, { label: "Marți", value: "marti" }, { label: "Miercuri", value: "miercuri" }, { label: "Joi", value: "joi" }, { label: "Vineri", value: "vineri" }, { label: "Sâmbătă", value: "sambata" }, { label: "Duminică", value: "duminica" }] }
+          - label: "Intervale de livrare"
+            name: "intervale"
+            widget: "list"
+            field: { label: "Interval", name: "interval", widget: "string", hint: "Exemplu: 09:00–12:00" }
+          - { label: "Metoda de primire a comenzilor", name: "comenzi_metoda", widget: "hidden" }
+          - { label: "Adresa serviciului de formulare", name: "comenzi_endpoint", widget: "hidden" }
+          - { label: "Arată nota „site demonstrativ” în subsol", name: "demo", widget: "boolean", required: false }

@@ -1,0 +1,11 @@
+{
+  "lista": [
+    { "nume": "Trandafiri", "text": "Clasici pentru iubire, aniversări și orice zi în care vrei să spui ceva important.", "culoare": "#FCE4EC", "culoare_floare": "#C2185B", "foto": "", "foto_pozitie": "centru" },
+    { "nume": "Lalele", "text": "Vestitoarele primăverii, în nuanțe pastel sau aprinse.", "culoare": "#FDF0F6", "culoare_floare": "#C04A86", "foto": "", "foto_pozitie": "centru" },
+    { "nume": "Bujori", "text": "Bogați și parfumați, disponibili doar câteva săptămâni pe an.", "culoare": "#FFF0F4", "culoare_floare": "#D64578", "foto": "", "foto_pozitie": "centru" },
+    { "nume": "Floarea-soarelui", "text": "Buchete care luminează orice cameră, oricât de gri ar fi ziua.", "culoare": "#FFF7DC", "culoare_floare": "#E0A100", "foto": "", "foto_pozitie": "centru" },
+    { "nume": "Crini", "text": "Eleganți și parfumați, potriviți pentru momente festive sau de reculegere.", "culoare": "#EEF3EC", "culoare_floare": "#A8B8A0", "foto": "", "foto_pozitie": "centru" },
+    { "nume": "Orhidee", "text": "Plante în ghiveci care înfloresc luni întregi.", "culoare": "#F5F0FF", "culoare_floare": "#8E6CC8", "foto": "", "foto_pozitie": "centru" },
+    { "nume": "Flori de câmp", "text": "Buchete libere, ca adunate dintr-o grădină de vară.", "culoare": "#FFF5E0", "culoare_floare": "#E07A2B", "foto": "", "foto_pozitie": "centru" }
+  ]
+}

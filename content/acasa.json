@@ -1,0 +1,169 @@
+{
+  "slideuri": [
+    {
+      "titlu": "Flori de toamnă, livrate {zi}.",
+      "text": "Colecția de sezon: crizanteme, trandafiri de culoarea mierii și frunze aurii.",
+      "buton": "Vezi colecția",
+      "link": "#buchete",
+      "fundal": "#F2A541",
+      "culoare_text": "#2B1600",
+      "foto": "",
+      "foto_pozitie": "centru"
+    },
+    {
+      "titlu": "Trandafiri în cutie, gata de dăruit.",
+      "text": "Rezistă până la două săptămâni și arată la fel de bine pe birou ca pe masa din sufragerie.",
+      "buton": "Alege o cutie",
+      "link": "flori/trandafiri",
+      "fundal": "#B0215F",
+      "culoare_text": "#FFFFFF",
+      "foto": "",
+      "foto_pozitie": "centru"
+    },
+    {
+      "titlu": "Nunți și botezuri, cu flori gândite pentru voi.",
+      "text": "Buchete de mireasă, lumânări și aranjamente pentru mese. Spune-ne data și îți trimitem o propunere.",
+      "buton": "Cere o ofertă pe WhatsApp",
+      "link": "whatsapp",
+      "fundal": "#C9E4D3",
+      "culoare_text": "#173326",
+      "foto": "",
+      "foto_pozitie": "centru"
+    }
+  ],
+  "avantaje": [
+    {
+      "titlu": "Livrare în aceeași zi",
+      "text": "Pentru comenzi până la 14:00"
+    },
+    {
+      "titlu": "Felicitare cadou",
+      "text": "Scrii mesajul, noi îl scriem de mână"
+    },
+    {
+      "titlu": "Plătești la livrare",
+      "text": "Sau prin transfer și link de plată"
+    },
+    {
+      "titlu": "4,9 din 5",
+      "text": "Din 320 de recenzii Google"
+    }
+  ],
+  "suna_titlu": "Nu știi ce să alegi? Te sunăm noi.",
+  "suna_text": "Lasă-ne numele și telefonul. Te sunăm în cel mult 30 de minute, în program, și facem împreună buchetul potrivit.",
+  "recenzii_nota": "4,9",
+  "recenzii_numar": "din 5, din 320 de recenzii Google",
+  "recenzii": [
+    {
+      "text": "Am comandat de la serviciu la 13:30 și mama a primit florile până seara. Exact ca în poză.",
+      "autor": "Andreea, recenzie Google"
+    },
+    {
+      "text": "M-au sunat în zece minute să confirme. Felicitarea era scrisă de mână, foarte frumos.",
+      "autor": "Mihai, recenzie Google"
+    },
+    {
+      "text": "Bujorii au ținut o săptămână întreagă. Revin sigur de 8 Martie.",
+      "autor": "Ioana, recenzie Google"
+    },
+    {
+      "text": "Ne-au făcut aranjamentele pentru botez și au venit cu idei mai bune decât ale noastre.",
+      "autor": "Cristina, recenzie Google"
+    }
+  ],
+  "livrare_text": "Pentru livrare în aceeași zi, trimite comanda până la ora 14:00. Comenzile de după această oră pleacă a doua zi dimineață.",
+  "livrare_detalii": [
+    {
+      "eticheta": "În oraș",
+      "valoare": "20 lei, gratuit peste 250 lei"
+    },
+    {
+      "eticheta": "Zile",
+      "valoare": "Luni–sâmbătă"
+    },
+    {
+      "eticheta": "Intervale",
+      "valoare": "09–12, 12–15, 15–19"
+    },
+    {
+      "eticheta": "Ridicare",
+      "valoare": "Gratuit, din florărie"
+    }
+  ],
+  "intrebari": [
+    {
+      "intrebare": "Cum plătesc comanda?",
+      "raspuns": "După ce trimiți comanda, te sunăm să confirmăm. Plătești la livrare, numerar sau cu cardul, prin transfer bancar sau printr-un link de plată pe care ți-l trimitem."
+    },
+    {
+      "intrebare": "Pot trimite flori fără să se știe de la cine sunt?",
+      "raspuns": "Da. Scrie în observații că vrei livrare anonimă, iar pe felicitare nu punem numele tău."
+    },
+    {
+      "intrebare": "Ce se întâmplă dacă destinatarul nu e acasă?",
+      "raspuns": "Curierul îl sună pe destinatar și, dacă nu răspunde, pe tine. Stabilim împreună o nouă oră sau lăsăm florile unui vecin."
+    },
+    {
+      "intrebare": "Cât rezistă florile?",
+      "raspuns": "Între 5 și 10 zile, în funcție de flori. Primești în buchet un plic cu hrană pentru flori și un mic ghid de îngrijire."
+    }
+  ],
+  "promotie": {
+    "activa": true,
+    "text": "Săptămâna aceasta: −20% la Recomandarea săptămânii."
+  },
+  "recomandare": {
+    "activa": true,
+    "titlu": "Recomandarea săptămânii",
+    "produs": "Bujori",
+    "buton": "Trimite-i flori"
+  },
+  "colectii": [
+    {
+      "titlu": "Pentru zile de naștere",
+      "text": "Culori vesele și buchete generoase, pentru o zi în care sărbătoritul merită tot ce e mai frumos.",
+      "ocazie": "Zi de naștere",
+      "tip": ""
+    },
+    {
+      "titlu": "Trandafiri pentru orice poveste",
+      "text": "Roșii, roz sau albi, în buchet sau în cutie. Clasicul care nu dă greș.",
+      "ocazie": "",
+      "tip": "Trandafiri"
+    },
+    {
+      "titlu": "Pentru mama",
+      "text": "Flori delicate, în nuanțe calde, pentru omul care le merită cel mai mult.",
+      "ocazie": "Pentru mama",
+      "tip": ""
+    }
+  ],
+  "evenimente_titlu": "Nunți și botezuri",
+  "evenimente_text": "Lucrăm cu fiecare familie în parte. Spune-ne data și locul, iar noi îți trimitem o propunere.",
+  "evenimente": [
+    {
+      "titlu": "Buchete de mireasă",
+      "subtitlu": "Lucrate cu pasiune",
+      "foto": "",
+      "foto_pozitie": "centru",
+      "culoare": "#EFE9F7",
+      "link": "whatsapp"
+    },
+    {
+      "titlu": "Lumânări de nuntă",
+      "subtitlu": "Delicate și naturale",
+      "foto": "",
+      "foto_pozitie": "centru",
+      "culoare": "#F7E3E9",
+      "link": "whatsapp"
+    },
+    {
+      "titlu": "Lumânări de botez",
+      "subtitlu": "Diafane și elegante",
+      "foto": "",
+      "foto_pozitie": "centru",
+      "culoare": "#E3F1E8",
+      "link": "whatsapp"
+    }
+  ]
+}

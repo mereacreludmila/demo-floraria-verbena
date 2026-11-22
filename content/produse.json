@@ -1,0 +1,268 @@
+{
+  "lista": [
+    {
+      "nume": "Dimineață de mai",
+      "descriere": "Trandafiri roz, eucalipt și santini albi.",
+      "tip": "Trandafiri",
+      "ocazii": [
+        "Iubire",
+        "Pentru mama"
+      ],
+      "eticheta": "Cel mai comandat",
+      "eticheta_roz": false,
+      "cel_mai_iubit": true,
+      "marimi": [
+        {
+          "nume": "Mic",
+          "pret": 149,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mediu",
+          "pret": 199,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mare",
+          "pret": 279,
+          "foto": "",
+          "foto_pozitie": "centru"
+        }
+      ],
+      "reducere": 0
+    },
+    {
+      "nume": "Câmp de vară",
+      "descriere": "Flori de câmp de sezon, legate liber.",
+      "tip": "Flori de câmp",
+      "ocazii": [
+        "Zi de naștere",
+        "Mulțumesc"
+      ],
+      "eticheta": "",
+      "eticheta_roz": false,
+      "cel_mai_iubit": true,
+      "marimi": [
+        {
+          "nume": "Mic",
+          "pret": 129,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mediu",
+          "pret": 179,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mare",
+          "pret": 239,
+          "foto": "",
+          "foto_pozitie": "centru"
+        }
+      ],
+      "reducere": 0
+    },
+    {
+      "nume": "Alb liniștit",
+      "descriere": "Crini, trandafiri albi și verdeață.",
+      "tip": "Crini",
+      "ocazii": [
+        "Condoleanțe",
+        "Pentru mama"
+      ],
+      "eticheta": "",
+      "eticheta_roz": false,
+      "cel_mai_iubit": false,
+      "marimi": [
+        {
+          "nume": "Mic",
+          "pret": 169,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mediu",
+          "pret": 229,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mare",
+          "pret": 309,
+          "foto": "",
+          "foto_pozitie": "centru"
+        }
+      ],
+      "reducere": 0
+    },
+    {
+      "nume": "Bujori",
+      "descriere": "Bujori de sezon, doar mai–iunie.",
+      "tip": "Bujori",
+      "ocazii": [
+        "Iubire",
+        "Zi de naștere"
+      ],
+      "eticheta": "",
+      "eticheta_roz": true,
+      "cel_mai_iubit": true,
+      "marimi": [
+        {
+          "nume": "Mic",
+          "pret": 189,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mediu",
+          "pret": 259,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mare",
+          "pret": 349,
+          "foto": "",
+          "foto_pozitie": "centru"
+        }
+      ],
+      "reducere": 20
+    },
+    {
+      "nume": "Soare în vază",
+      "descriere": "Floarea-soarelui și solidago.",
+      "tip": "Floarea-soarelui",
+      "ocazii": [
+        "Zi de naștere",
+        "Mulțumesc"
+      ],
+      "eticheta": "",
+      "eticheta_roz": false,
+      "cel_mai_iubit": true,
+      "marimi": [
+        {
+          "nume": "Mic",
+          "pret": 119,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mediu",
+          "pret": 159,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mare",
+          "pret": 219,
+          "foto": "",
+          "foto_pozitie": "centru"
+        }
+      ],
+      "reducere": 0
+    },
+    {
+      "nume": "Lalele pastel",
+      "descriere": "Lalele în trei nuanțe, ambalate în hârtie.",
+      "tip": "Lalele",
+      "ocazii": [
+        "Mulțumesc",
+        "Pentru mama"
+      ],
+      "eticheta": "",
+      "eticheta_roz": false,
+      "cel_mai_iubit": false,
+      "marimi": [
+        {
+          "nume": "Mic",
+          "pret": 99,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mediu",
+          "pret": 139,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mare",
+          "pret": 189,
+          "foto": "",
+          "foto_pozitie": "centru"
+        }
+      ],
+      "reducere": 0
+    },
+    {
+      "nume": "Cutie cu trandafiri",
+      "descriere": "Trandafiri roșii în cutie rotundă.",
+      "tip": "Trandafiri",
+      "ocazii": [
+        "Iubire"
+      ],
+      "eticheta": "Nou",
+      "eticheta_roz": true,
+      "cel_mai_iubit": true,
+      "marimi": [
+        {
+          "nume": "Mică",
+          "pret": 199,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Medie",
+          "pret": 289,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "Mare",
+          "pret": 399,
+          "foto": "",
+          "foto_pozitie": "centru"
+        }
+      ],
+      "reducere": 0
+    },
+    {
+      "nume": "Orhidee în ghiveci",
+      "descriere": "Phalaenopsis, durează luni întregi.",
+      "tip": "Orhidee",
+      "ocazii": [
+        "Mulțumesc",
+        "Condoleanțe",
+        "Pentru mama"
+      ],
+      "eticheta": "",
+      "eticheta_roz": false,
+      "cel_mai_iubit": false,
+      "marimi": [
+        {
+          "nume": "1 tulpină",
+          "pret": 129,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "2 tulpini",
+          "pret": 189,
+          "foto": "",
+          "foto_pozitie": "centru"
+        },
+        {
+          "nume": "3 tulpini",
+          "pret": 249,
+          "foto": "",
+          "foto_pozitie": "centru"
+        }
+      ],
+      "reducere": 0
+    }
+  ]
+}

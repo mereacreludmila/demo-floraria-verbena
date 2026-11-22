@@ -1,0 +1,9 @@
+{
+  "lista": [
+    { "nume": "Zi de naștere", "text": "Culori vesele, pentru o zi mare", "culoare": "#F5C443" },
+    { "nume": "Iubire", "text": "Trandafiri și bujori", "culoare": "#F49AB8" },
+    { "nume": "Pentru mama", "text": "Delicate, în nuanțe calde", "culoare": "#F6AE8F" },
+    { "nume": "Mulțumesc", "text": "Un gest mic care spune mult", "culoare": "#B9A3E6" },
+    { "nume": "Condoleanțe", "text": "Alb și verde, cu discreție", "culoare": "#CFE4D6" }
+  ]
+}
