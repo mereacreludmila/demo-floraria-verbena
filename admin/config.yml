@@ -1,4 +1,5 @@
 # Panoul de editare al florăriei. Aici decidem exact ce poate modifica florăria.
+locale: "ro"
 backend:
   name: git-gateway
   branch: main
@@ -31,7 +32,7 @@ collections:
               - { label: "Descriere scurtă", name: "descriere", widget: "string" }
               - { label: "Tipul de flori", name: "tip", widget: "relation", collection: "magazin", file: "tipuri", search_fields: ["lista.*.nume"], value_field: "lista.*.nume", display_fields: ["lista.*.nume"], hint: "Buchetul apare pe pagina acestui tip de flori." }
               - { label: "Ocazii", name: "ocazii", widget: "relation", collection: "magazin", file: "ocazii", search_fields: ["lista.*.nume"], value_field: "lista.*.nume", display_fields: ["lista.*.nume"], multiple: true, required: false, hint: "Buchetul apare pe paginile acestor ocazii." }
-              - { label: "Etichetă (opțional)", name: "eticheta", widget: "string", required: false, hint: "Exemplu: Nou, De sezon, Cel mai comandat" }
+              - { label: "Etichetă", name: "eticheta", widget: "string", required: false, hint: "Exemplu: Nou, De sezon, Cel mai comandat" }
               - { label: "Eticheta în roz", name: "eticheta_roz", widget: "boolean", default: false, required: false }
               - { label: "Apare la „Cele mai iubite”", name: "cel_mai_iubit", widget: "boolean", default: false, required: false }
               - { label: "Reducere (%)", name: "reducere", widget: "number", value_type: "int", min: 0, max: 90, default: 0, required: false, hint: "0 = fără reducere. Prețul redus se calculează automat la toate mărimile." }
